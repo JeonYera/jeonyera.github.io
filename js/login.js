@@ -1,6 +1,34 @@
 
 /* 로그인 페이지 */
 
+const login_btn = document.getElementById("login_btn");
+login_btn.addEventListener("click", function () {
+
+    // 로그인 버튼 클릭 시
+    const storedUserData = JSON.parse(localStorage.getItem("userData"));
+    const userId = document.getElementById("loginId").value;
+    const password = document.getElementById("loginPwd").value;
+
+    if (Array.isArray(storedUserData)) { // localStorage에서 가져온 사용자 데이터가 배열인 경우
+        const user = storedUserData.find((data) => data.userId === userId && data.userPw === password);
+        if (user) {
+            // 로그인 성공
+            alert("💜로그인 되었습니다💜");
+
+            // 사용자 ID를 sessionStorage에 저장
+            sessionStorage.setItem('login_userId', userId);
+
+            // index.html로 이동
+            window.location.href = "../kh_front_project/index.html";
+
+        } else {
+            // 로그인 실패
+            alert("사용자 ID와 비밀번호를 잘못 입력하셨습니다.");
+        }
+    }
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const login_li = document.getElementById("login_li");
     const logout_li = document.getElementById("logout_li");
@@ -29,31 +57,3 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "../kh_front_project/index.html";
     });
 })
-
-
-const login_btn = document.getElementById("login_btn");
-login_btn.addEventListener("click", function () {
-
-    // 로그인 버튼 클릭
-    const storedUserData = JSON.parse(localStorage.getItem("userData"));
-    const userId = document.getElementById("loginId").value;
-    const password = document.getElementById("loginPwd").value;
-
-    if (Array.isArray(storedUserData)) { // localStorage에서 가져온 사용자 데이터가 배열인 경우
-        const user = storedUserData.find((data) => data.userId === userId && data.userPw === password);
-        if (user) {
-            // 로그인 성공
-            alert("💜로그인 되었습니다💜");
-
-            // 사용자 ID를 sessionStorage에 저장
-            sessionStorage.setItem('login_userId', userId);
-
-            // index.html로 이동
-            window.location.href = "../kh_front_project/index.html";
-
-        } else {
-            // 로그인 실패
-            alert("사용자 ID와 비밀번호를 잘못 입력하셨습니다.");
-        }
-    }
-});
