@@ -189,7 +189,7 @@ $(document).ready(function () {
     // 4.이름검사 : 한글 2글자 이상만 허용.
     document.addEventListener("DOMContentLoaded", function () {
         const validations3 = [
-            { re: /^[가-힣]{2,}$/, msg: '이름은 한글 2글자만 가능합니다.' },
+            { re: /^[가-힣]{2,}$/, msg: '이름은 한글 2글자 이상 가능합니다.' },
         ];
 
         const result3 = validations3.every(({ re, msg }) => {
@@ -253,7 +253,7 @@ $(document).ready(function () {
             };
 
             // 기존 데이터 가져오기
-            const storedUserData = JSON.parse(localStorage.getItem("userData"));
+            let storedUserData = JSON.parse(localStorage.getItem("userData"));
             // 기존 데이터가 없는 경우 새로운 배열 생성
             if (!Array.isArray(storedUserData)) {
                 storedUserData = [];
