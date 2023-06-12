@@ -265,7 +265,7 @@ $(document).ready(function () {
             localStorage.setItem("userData", JSON.stringify(storedUserData));
 
             alert("💜가입해주셔서 감사합니다💜");
-            window.location.href = "../kh_front_project/Login.html";
+            window.location.href = "../Login.html";
         }
     });
 });

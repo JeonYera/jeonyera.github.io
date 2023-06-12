@@ -19,7 +19,7 @@ login_btn.addEventListener("click", function () {
             sessionStorage.setItem('login_userId', userId);
 
             // index.html로 이동
-            window.location.href = "../kh_front_project/index.html";
+            window.location.href = "../index.html";
 
         } else {
             // 로그인 실패
