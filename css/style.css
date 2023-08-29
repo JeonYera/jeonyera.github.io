@@ -132,6 +132,11 @@ img {
 }
 
 /* style */
+
+.container {
+  margin-left: 50px;
+}
+
 .wrapper {
   margin-left: 60px;
   position: relative;
@@ -139,7 +144,6 @@ img {
 }
 
 .nav {
-  width: 280px;
   height: 100%;
   position: fixed;
   top: 0;
@@ -290,11 +294,10 @@ img {
 /* home */
 .social {
   display: flex;
-  margin-top: 50px;
 }
 
 .social li {
-  width: 50px;
+  width: 40px;
   margin-right: 20px;
   margin-top: 10px;
 }
@@ -304,7 +307,12 @@ img {
   font-weight: 600;
   font-size: 150%;
   color: #646464;
-  margin-top: -160px;
+  margin-top: -150px;
+}
+
+.socila_info {
+  position: absolute;
+  margin-top: -235px;
 }
 
 .title {
