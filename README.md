@@ -1,3 +1,14 @@
 # 전예라's Homepage
+## 1인 개인 프로젝트
 
-## kh정보교육원에서 개인 프로젝트로 만들었던 프로젝트입니다.
+## Stack
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Javascript</li>
+</ul>
+
+### Tools
+<ul>
+  <li>VSCode</li>
+</ul>
