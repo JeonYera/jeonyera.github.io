@@ -12,7 +12,7 @@ $(document).ready(function () {
         section = $contents.eq(idx), // $contents에서 idx에 해당하는 섹션을 선택하고 section 변수에 할당
         offsetTop = section.offset().top; // 선택한 섹션의 상단 위치를 offsetTop 변수에 할당
 
-      var correctedOffsetTop = offsetTop - -10; // offsetTop 값을 10만큼 보정값 조정, 스크롤 살짝 위로 올리기
+      var correctedOffsetTop = offsetTop - -5; // offsetTop 값을 10만큼 보정값 조정, 스크롤 살짝 위로 올리기
       $doc
         .stop() // $doc 변수에 저장된 문서 요소('html, body')를 애니메이션으로 스크롤
         .animate(
