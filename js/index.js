@@ -109,3 +109,22 @@ $(document).ready(function () {
     }
   }
 });
+
+let slideIndex = 0;
+let slides = document.getElementsByClassName("slide");
+slides[slideIndex].classList.add("active");
+
+function move(n) {
+  // 이미 처음이거나 끝이라면 더이상 움직이지 않는다.
+  if (
+    (slideIndex === 0 && n === -1) ||
+    (slideIndex === slides.length - 1 && n === 1)
+  ) {
+    return;
+  }
+
+  slides[slideIndex].classList.remove("active");
+  slideIndex += n;
+
+  slides[slideIndex].classList.add("active");
+}
