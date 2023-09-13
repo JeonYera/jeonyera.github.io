@@ -252,7 +252,7 @@
           <h2 class="title2">TROUBLE SHOOTING</h2>
           <div class="content">
               <div class="box">
-              <h3 class="title3">다중 엔티티 간의 다대다 관계를 처리하기 위한 이미지 매핑 테이블 설계<br /></h3>
+              <h3 class="title3">다대다 관계를 처리하기 위한 이미지 매핑 테이블 설계<br /></h3>
               <img src="./images/erd.png" style="width: 400px; margin-bottom: 30px;">
               <div class="desc"><div class="s-desc">💦 문제 상황</div> <br/>처음에는 image_attachment 테이블이 question_id를 참조하도록 설계했다. <br/>그런데 이 테이블을 review, product, cart 등 여러 테이블에서도 사용해야 한다는 사실을 깨달았다. <br/>이렇게 되면 참조 관계가 복잡해지고, 의존성이 높아져 유연성이 떨어진다는 문제점이 있다. <br/><br/>
                 
