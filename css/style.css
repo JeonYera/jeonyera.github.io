@@ -1,4 +1,5 @@
 /* common */
+@import url("https://fonts.googleapis.com/earlyaccess/notosanskr.css");
 html,
 body,
 div,
@@ -191,9 +192,12 @@ img {
   src: url("../font/NanumSquareL.otf") format("truetype");
 }
 
-@font-face {
-  font-family: "NanumSquareB";
-  src: url("../font/NanumSquareB.otf") format("truetype");
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .font {
@@ -296,6 +300,10 @@ img {
   display: flex;
 }
 
+.section_wrap {
+  margin-top: 10px;
+}
+
 .social li {
   width: 40px;
   margin-right: 20px;
@@ -319,7 +327,6 @@ img {
   font-family: "Blinker-Bold";
   font-size: 550%;
   color: #374259;
-  margin-top: -10px;
 }
 
 .content span {
@@ -327,13 +334,11 @@ img {
 }
 
 .kh_date {
-  font-family: "NanumSquareB";
   font-size: 100%;
   color: #5c8984;
 }
 
 .kh_java {
-  font-family: "NanumSquareL";
   font-weight: 100;
   font-size: 100%;
   color: #3c3c3c;
@@ -422,7 +427,6 @@ img {
 
 /* 홈 본문 폰트 */
 .desc0 {
-  font-family: "NanumSquareL";
   font-size: 125%;
   margin-top: 25px;
   line-height: 170%;
@@ -431,7 +435,6 @@ img {
 
 /* 나머지 본문 폰트 */
 .desc {
-  font-family: "NanumSquareL";
   font-size: 100%;
   margin-top: 10px;
   line-height: 170%;
@@ -444,10 +447,10 @@ img {
 }
 
 strong {
-font-weight: 600;
-font-size: 16px;
-margin-bottom: -20px;
-margin-top: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: -20px;
+  margin-top: 10px;
 }
 
 /* ROADMAP */
@@ -499,7 +502,6 @@ li {
 
 /* 이름 */
 .Join_01 {
-  font-family: "NanumSquareL";
   font-size: 100%;
   text-align: left;
   margin-left: 118px;
@@ -521,7 +523,6 @@ li {
   width: 200px;
   height: 50px;
   border: 1px solid white;
-  font-family: "NanumSquareL";
   font-weight: bold;
   font-size: 100%;
   background-color: rgb(255, 230, 0);
@@ -530,7 +531,6 @@ li {
 
 /* - */
 span.dash {
-  font-family: "NanumSquareL";
   font-size: 20%;
   margin-left: 5px;
 }
@@ -593,7 +593,6 @@ span.req {
 
 /* 이름 */
 .Login_01 {
-  font-family: "NanumSquareL";
   font-size: 100%;
   text-align: center;
   margin-top: 100px;
@@ -606,7 +605,6 @@ span.req {
   width: 200px;
   height: 50px;
   border: 1px solid white;
-  font-family: "NanumSquareL";
   font-weight: bold;
   font-size: 100%;
   background-color: rgb(255, 230, 0);
@@ -628,7 +626,6 @@ span.req {
 
 /* 타이틀 */
 .admin_title {
-  font-family: "NanumSquareL";
   font-size: 200%;
   text-align: center;
   margin-top: 50px;
@@ -641,13 +638,8 @@ span.req {
   margin-left: 110px;
 }
 
-.list {
-  font-family: "NanumSquareB";
-}
-
 th,
 td {
-  font-family: "NanumSquareL";
   border: 1px solid #000;
   padding: 5px;
   margin-left: 100px;
