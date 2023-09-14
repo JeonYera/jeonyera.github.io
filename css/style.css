@@ -299,7 +299,7 @@ img {
 .social li {
   width: 40px;
   margin-right: 20px;
-  margin-top: 10px;
+  margin-top: 35px;
 }
 
 .sub_title {
@@ -312,14 +312,14 @@ img {
 
 .socila_info {
   position: absolute;
-  margin-top: -235px;
+  margin-top: -240px;
 }
 
 .title {
   font-family: "Blinker-Bold";
-  font-size: 600%;
-  margin-top: -14px;
+  font-size: 550%;
   color: #374259;
+  margin-top: -10px;
 }
 
 .content span {
@@ -328,14 +328,14 @@ img {
 
 .kh_date {
   font-family: "NanumSquareB";
-  font-size: 90%;
+  font-size: 100%;
   color: #5c8984;
 }
 
 .kh_java {
   font-family: "NanumSquareL";
   font-weight: 100;
-  font-size: 83%;
+  font-size: 100%;
   color: #3c3c3c;
   margin-left: 32px;
   margin-top: -30px;
@@ -424,8 +424,9 @@ img {
 .desc0 {
   font-family: "NanumSquareL";
   font-size: 125%;
-  margin-top: 40px;
+  margin-top: 25px;
   line-height: 170%;
+  margin-bottom: 40px;
 }
 
 /* 나머지 본문 폰트 */
