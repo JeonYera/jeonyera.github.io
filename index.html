@@ -14,7 +14,7 @@
         <div class="profile_img">
           <img src="./images/profile_img.png" alt="전예라 미모티콘" />
         </div>
-        <ul>
+        <ul class="nav-text">
           <li class="on">
             <a href="#section_1" class="font">ABOUT &nbspME</a>
           </li>
@@ -270,8 +270,10 @@
               </div>
               <br/>
               <h3 class="title3">2. 데이터베이스 성능 개선</h3><a href="https://hoducute.tistory.com/124">블로그 연재 : https://hoducute.tistory.com/124</a><br/>
-              <span>성능 개선 전</span>  <img src="./images/1/캡처.JPG" style="width: 600px; margin-bottom: 30px;">
-              <span>성능 개선 후</span>  <img src="./images/1/캡처2.JPG" style="width: 610px; margin-bottom: 30px;">
+              <div class="img-wrp">
+                <span>성능 개선 전</span>  <img src="./images/1/캡처.JPG" style="width: 600px; margin-bottom: 30px;">
+                <span>성능 개선 후</span>  <img src="./images/1/캡처2.JPG" style="width: 610px; margin-bottom: 30px;">
+              </div>
               <div class="desc"><div class="s-desc">💦 문제 상황</div> <br/>로컬 DB에서는 괜찮았으나 오라클 공용 DB를 사용하자마자 홈페이지 로딩 속도가 확 느려졌습니다. aop를 보니 약 6초가 걸렸습니다.<br />코드를 확인해보니 한 페이지를 로딩할 때 쿼리문이 약 12개가 돌아가고 있었고, 심지어 N+1 이슈까지 생겨서 더욱 성능 저하가 되었습니다.<br/><br/>
                 
                 <div class="s-desc">🔅 해결 방안</div> <br/>다른 팀원이 짠 코드였기에 하나하나 확인을 하면서 전체적으로 수정을 했습니다. 조회용 DTO를 만들었고, 필요 없어도 되는 쿼리문은 삭제하고 <br/>조인이 가능한 쿼리문들은 조인을 이용했습니다. 특히 펫 조회용 쿼리문은 리뷰의 수만큼 돌아가고 있었기에 미리 DTO에 펫 정보를 넣어놓고 <br/>리뷰의 수만큼 돌아가던 for문을 수정해서 미리 조인을 이용해서 한 개의 쿼리문을 가져올 수 있게 했습니다. <br/>최종적으로 <strong>6초 (6241ms) -> 0.6초 (688ms)</strong> 까지 줄일 수 있었습니다.<br/><br/>

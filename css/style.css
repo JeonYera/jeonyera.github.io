@@ -737,12 +737,54 @@ td {
 @media (max-width: 768px) {
   /* 사이드바와 네비게이션 */
   .nav {
-    padding: 200px 50px;
+    width: 440px;
+    padding: 20px 10px;
     position: fixed;
+    height: auto;
+    right: 0;
+    display: flex;
+  }
+  .nav-text {
+    gap: 50px;
+  }
+  .nav .profile_img {
+    display: none;
   }
 
+  .to_top_btn {
+    position: fixed;
+    bottom: 20px;
+    right: 210px;
+  }
+  .container .bar_color {
+    display: none;
+  }
+
+  .slider {
+    width: 440px;
+    height: 350px;
+    overflow: hidden;
+  }
+  .slider img {
+    width: 450px;
+    height: 350px;
+  }
+
+  .img-wrp img {
+    width: 450px;
+  }
+  .TeachStack {
+    width: 100%;
+  }
+  ul {
+    display: flex;
+  }
   .container .progress_container {
     display: none;
+  }
+
+  .container {
+    margin-left: -1px;
   }
 
   .nav .profile_img {
@@ -752,8 +794,8 @@ td {
   /* 컨테이너와 래퍼 */
   .container,
   .wrapper {
-    width: 900px;
-    margin-left: 110px; /* 좌측 마진 조정 */
+    width: 450px;
+    margin-left: -1px; /* 좌측 마진 조정 */
     margin-top: 400px;
   }
 
