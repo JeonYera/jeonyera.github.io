@@ -737,7 +737,7 @@ td {
 @media (max-width: 768px) {
   /* 사이드바와 네비게이션 */
   .nav {
-    padding: 100px 2px;
+    padding: 200px 50px;
     position: fixed;
   }
 
@@ -752,8 +752,9 @@ td {
   /* 컨테이너와 래퍼 */
   .container,
   .wrapper {
-    margin-left: 60px; /* 좌측 마진 조정 */
-    margin-top: 300px;
+    width: 900px;
+    margin-left: 110px; /* 좌측 마진 조정 */
+    margin-top: 400px;
   }
 
   /* 상단 유틸리티 바 */
