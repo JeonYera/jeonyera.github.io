@@ -301,7 +301,7 @@ body {
 }
 
 .section_wrap {
-  margin-top: -180px;
+  /* margin-top: -180px; */
 }
 
 .social li {
@@ -437,6 +437,7 @@ body {
 .desc {
   font-size: 100%;
   margin-top: 10px;
+  margin-bottom: 60px;
   line-height: 170%;
 }
 
@@ -731,4 +732,61 @@ td {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+@media (max-width: 768px) {
+  /* 사이드바와 네비게이션 */
+  .nav {
+    padding: 100px 2px;
+    position: fixed;
+  }
+
+  .container .progress_container {
+    display: none;
+  }
+
+  .nav .profile_img {
+    width: 100px; /* 프로필 이미지 크기 조정 */
+  }
+
+  /* 컨테이너와 래퍼 */
+  .container,
+  .wrapper {
+    margin-left: 60px; /* 좌측 마진 조정 */
+    margin-top: 300px;
+  }
+
+  /* 상단 유틸리티 바 */
+  .utility {
+    padding: 10px 20px; /* 패딩 조정 */
+  }
+
+  /* 각 섹션의 패딩 조정 */
+  .container .section_1,
+  .container .section_2,
+  .container .section_3,
+  .container .section_4,
+  .container .section_5 {
+    padding: 100px 20px; /* 패딩 조정 */
+  }
+
+  /* 글꼴 크기 조정 */
+  .font,
+  .title,
+  .sub_title,
+  .desc,
+  .desc0,
+  .title2,
+  .title3 {
+    font-size: 80%; /* 모든 글꼴 크기를 80%로 조정 */
+  }
+
+  /* 버튼 및 이미지 크기 조정 */
+  .to_top_btn,
+  .prev_btn,
+  .next_btn,
+  .button_box {
+    width: 30px; /* 버튼 크기 조정 */
+    height: 30px; /* 버튼 높이 조정 */
+  }
 }
