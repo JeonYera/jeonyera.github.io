@@ -734,11 +734,16 @@ td {
   gap: 10px;
 }
 
+.img-wrp img {
+  width: 600px;
+  margin-bottom: 30px;
+}
+
 @media (max-width: 768px) {
   /* 사이드바와 네비게이션 */
   .nav {
-    width: 440px;
-    padding: 20px 10px;
+    width: 420px;
+    padding: 10px;
     position: fixed;
     height: auto;
     right: 0;
@@ -754,24 +759,24 @@ td {
   .to_top_btn {
     position: fixed;
     bottom: 20px;
-    right: 210px;
+    left: 370px;
   }
   .container .bar_color {
     display: none;
   }
 
   .slider {
-    width: 440px;
+    width: 400px;
     height: 350px;
     overflow: hidden;
   }
   .slider img {
-    width: 450px;
-    height: 350px;
+    width: 400px;
+    height: 320px;
   }
 
   .img-wrp img {
-    width: 450px;
+    width: 390px;
   }
   .TeachStack {
     width: 100%;
@@ -791,10 +796,14 @@ td {
     width: 100px; /* 프로필 이미지 크기 조정 */
   }
 
+  .nav-text {
+    gap: 35px;
+  }
+
   /* 컨테이너와 래퍼 */
   .container,
   .wrapper {
-    width: 450px;
+    width: 420px;
     margin-left: -1px; /* 좌측 마진 조정 */
     margin-top: 400px;
   }
@@ -821,7 +830,7 @@ td {
   .desc0,
   .title2,
   .title3 {
-    font-size: 80%; /* 모든 글꼴 크기를 80%로 조정 */
+    font-size: 90%; /* 모든 글꼴 크기를 80%로 조정 */
   }
 
   /* 버튼 및 이미지 크기 조정 */
